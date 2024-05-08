@@ -1,0 +1,33 @@
+JSX（JavaScript XML）は、React コンポーネント内で UI を記述するための JavaScript の拡張構文です。JSX を使うことで、JavaScript の中に HTML 構造や要素を直感的に記述することができます。
+
+JSX の代表的なルールは以下の通りです：
+
+HTML 構文の記述: JSX を使用すると、HTML 構文に似た形式で要素や属性を記述できます。これにより、コンポーネントのレンダリングや UI の構築が直感的になります。
+const element = <h1>Hello, world!</h1>;
+JavaScript 式の組み込み: JSX 内では、中括弧 {} を使用して JavaScript 式を埋め込むことができます。これにより、動的なコンテンツや変数を JSX 内で扱うことができます。
+const name = 'John';
+const element = <h1>Hello, {name}!</h1>;
+コンポーネントの呼び出し: JSX 内では、他の React コンポーネントを呼び出すこともできます。このようにして、コンポーネントのネストや再利用が容易になります。
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+};
+属性の指定: JSX 要素には、通常の HTML 要素と同様に属性を指定することができます。属性値には、文字列や JavaScript 式を指定することができます。
+const element = <img src={imageUrl} alt="React Logo" />;
+コメントの記述: JSX 内では、中括弧 {} 内にコメントを記述することができます。JavaScript のコメントと同様に、1 行コメントや複数行コメントを使用できます。
+const element = (
+  <div>
+    {/* これはコメントです */}
+    <h1>Hello, world!</h1>
+    {/*
+      複数行コメントも可能です
+      これは2行目のコメントです
+    */}
+  </div>
+);
+JSX は React の強力な機能の1つであり、コンポーネントの記述や読みやすさを向上させる役割を果たしています。
